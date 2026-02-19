@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio | Junior Developer</title>
+    <link rel="stylesheet" href="style/Style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mg</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#calculator">Transport Tool</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <img src="images/17.jpg" alt="My Profile" class="profile-img">
+            <h1>Hi, I'm Mugtaba</h1>
+            <p class="role">Frontend Developer</p>
+            <p class="tagline">Building clean and functional digital solutions.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-flex">
+            <div class="about-text">
+                <p>I am a Year II Computer Science student at INES-Ruhengeri. My goal is to become a top-tier UI Engineer.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">Bootstrap</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Real Academic Projects</h2>
+        <div class="projects-flex">
+            <div class="project-card">
+                <h3>Student Management System</h3>
+                <p>Solved manual record keeping in local schools.</p>
+                <p><strong>Tech:</strong> Java, SQL</p>
+                <a href="#">GitHub Link</a>
+            </div>
+            </div>
+    </section>
+
+    <section id="calculator" class="container">
+        <h2>Musanze Transport Fare Estimator</h2>
+        <div class="calc-box">
+            <label for="distance">Enter Distance (km):</label>
+            <input type="number" id="distance" placeholder="e.g. 5">
+            <button onclick="calculateFare()" class="btn">Estimate Fare</button>
+            <p id="calc-result"></p>
+        </div>
+    </section>
+
+    <section id="cv" class="container text-center">
+        <h2>My Resume</h2>
+        <a href="assets/cv/my-cv.pdf" download class="btn">Download CV (PDF)</a>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Designed by [Your Name] | INES-Ruhengeri</p>
+    </footer>
+
+    <script src="js/javascript.ts"></script>
+</body>
+</html>
